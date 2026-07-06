@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VG0KHm2JlOAXSUUpWpoAERkOYdMXYBARTRtUOvsekNY=",
+  "Source": "BMSApi",
+  "BasePath": "_content/BMSApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
