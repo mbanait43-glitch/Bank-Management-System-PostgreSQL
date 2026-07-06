@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BMSApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38b8604f97d61bd4d66ec8a8a740af9b190d922c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BMSApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BMSApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
