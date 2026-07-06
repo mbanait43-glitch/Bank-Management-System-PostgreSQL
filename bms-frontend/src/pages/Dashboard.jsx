@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
-  const baseUrl = "http://localhost:5265/api/Bank";
+  const baseUrl = "https://bank-management-system-postgresql.onrender.com/api/Bank";
   const navigate = useNavigate();
 
   const userId = localStorage.getItem("userId");
