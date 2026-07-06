@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { toast } from "sonner";
 import axios from "axios";
 
 function SignUp() {
@@ -24,10 +25,14 @@ function SignUp() {
 
     try {
       const res = await axios.post(`${baseUrl}/register`, formData);
-      alert(res.data.message);
-      navigate("/sign-in");
+
+      toast.success(res.data.message || "Account Created Successfully");
+
+      setTimeout(() => {
+        navigate("/sign-in");
+      }, 700);
     } catch (error) {
-      alert(error.response?.data || "Signup failed");
+      toast.error(error.response?.data || "Signup failed");
     }
   };
 
@@ -70,7 +75,9 @@ function SignUp() {
               required
             />
 
-            <button type="submit" className="primary-btn">Sign Up</button>
+            <button type="submit" className="primary-btn">
+              Sign Up
+            </button>
           </form>
 
           <p className="switch-text">

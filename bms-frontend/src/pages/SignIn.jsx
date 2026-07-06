@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { toast } from "sonner";
 import axios from "axios";
 
 function SignIn() {
@@ -34,10 +35,13 @@ function SignIn() {
       localStorage.setItem("token", res.data.token || "");
       localStorage.setItem("isAdmin", res.data.isAdmin ? "true" : "false");
 
-      alert(res.data.message);
-      navigate("/dashboard");
+      toast.success(res.data.message || "Login Successful");
+
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 700);
     } catch (error) {
-      alert(error.response?.data || "Login failed");
+      toast.error(error.response?.data || "Login failed");
     }
   };
 
@@ -70,7 +74,9 @@ function SignIn() {
               required
             />
 
-            <button type="submit" className="primary-btn">Sign In</button>
+            <button type="submit" className="primary-btn">
+              Sign In
+            </button>
           </form>
 
           <p className="switch-text">
