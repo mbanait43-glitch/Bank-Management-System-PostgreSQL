@@ -170,3 +170,4 @@ D:\BMSProject_Final_Real\BMSProject\BMSApi\obj\Debug\net8.0\BMSApi.genruntimecon
 D:\BMSProject_Final_Real\BMSProject\BMSApi\obj\Debug\net8.0\ref\BMSApi.dll
 D:\BMSProject_Final_Real\BMSProject\BMSApi\bin\Debug\net8.0\Npgsql.dll
 D:\BMSProject_Final_Real\BMSProject\BMSApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\BMSProject_Final_Real\BMSProject\BMSApi\obj\Debug\net8.0\BMSApi.sourcelink.json

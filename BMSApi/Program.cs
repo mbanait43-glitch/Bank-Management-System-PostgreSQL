@@ -78,6 +78,15 @@ app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapGet("/health", () =>
+{
+    return Results.Ok(new
+    {
+        status = "ok",
+        service = "Bank Management System API"
+    });
+});
+
 app.MapControllers();
 
 app.Run();
