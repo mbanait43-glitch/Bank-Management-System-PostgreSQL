@@ -78,7 +78,7 @@ app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapGet("/health", () =>
+app.MapMethods("/health", new[] { "GET", "HEAD" }, () =>
 {
     return Results.Ok(new
     {
